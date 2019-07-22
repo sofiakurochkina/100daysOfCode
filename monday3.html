@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>
+      Playing with the DOM
+    </title>
+  </head>
+  <body>
+    <h1 id="main-heading">Popka-shlepka</h1>
+    <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script>
+      var newHeadingText = prompt("Please provide a new Sonya's nickname");
+      $("#main-heading").text(newHeadingText);
+      $("body").append("<p>Skol'ko raz?</p>");
+      for (var i = 0; i < 3; i++) {
+        var hobby = prompt("POPKA!");
+        $("body").append("<p>" + hobby + "</p>");
+      }
+      $("h1")
+        .slideUp(1000)
+        .slideDown(1000);
+    </script>
+  </body>
+</html>
