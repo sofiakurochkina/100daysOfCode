@@ -50,7 +50,6 @@ img {
 
 } 
 
-
 .col-1{
 width: 20%;
 }
@@ -67,4 +66,14 @@ width: 70%;
     background: #212614;
     padding: .5em;
     color: white; 
+}
+
+@media (max-width: 600px){
+    .columns {
+        flex-direction: column;}
+    .col-1,
+    .col-2,
+    .col-3 {
+        width: 100%;
+    }
 }
